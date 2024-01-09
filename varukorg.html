@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMi - Ekologiska och giftfria leksaker</title>
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Twinkle+Star&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="offer">
+            <p>Ny kund? Få 20% rabatt på din första order! Ange: NYKUND i kassan.</p>
+        </div>
+        <div class="navbar">
+            <div class="maxWidth">
+                <a href="index.html"><img src="bilder/logo.png" alt="MiniMi"></a>
+                <nav>
+                    <!--Länkar i huvudnavigering-->
+                    <ul class="mainLinks">
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="produkter.html">Produkter</a></li>
+                        <li><a href="omoss.html">Om oss</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                    <!--Favoriter och varukorg i huvudnavigering-->
+                    <ul class="favBasket">
+                        <li><a class="favHeart" href="favoriter.html"><img src="icons/heart.svg" alt="Favoriter"></a></li>
+                        <li><a class="basket" href="varukorg.html"><img src="icons/bag.svg" alt="Varukorg"></a><span id="small-basket"></span></li>
+                    </ul>
+
+                    <!--Hamburgermeny-->
+                    <div class="hamburgerMenu">
+                        <div id="menu">
+                            <div id="menu-bar" onclick="menuOnClick()">
+                                <div id="bar1" class="bar"></div>
+                                <div id="bar2" class="bar"></div>
+                                <div id="bar3" class="bar"></div>
+                            </div>
+                            <nav class="hamburger" id="nav">
+                                <ul class="mainLinksHB">
+                                    <li><a href="index.html">Hem</a></li>
+                                    <li><a href="produkter.html">Produkter</a></li>
+                                    <li><a href="omoss.html">Om oss</a></li>
+                                    <li><a href="kontakt.html">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="menu-bg" id="menu-bg"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        <!--Breadcrumbs-->
+        <div class="breadcrumbsContainer">
+            <p class="p_breadcrumbs"><a href="index.html">Hem</a> / Produkter</p>
+        </div>
+    
+
+    <main>
+
+<div class="mainBasket">
+<h2>Min varukorg</h2>
+<table>
+    <thead>
+        <tr>
+            <td class="bild">Bild</td>
+            <td class="artikel">Arikelnr</td>
+            <td class="vara">Varunamn</td>
+            <td class="antal">Antal</td>
+            <td class="pris-h">Pris</td>
+        </tr>
+    </thead>
+    <tbody id="checkout"></tbody>
+</table>
+
+<button class="mainBtn" id="emptyBtn" onclick="emptyBasket()">Töm varukorgen</button>
+</div>
+
+<div class="form checkout-button">
+    <h3>Dina leveransuppgifter</h3>
+    <form class="deliveryOpt">
+        <fieldset>
+            <label for="name">Namn:</label>
+            <input type="text" id="name" placeholder="Förnamn Efternamn">
+
+            <label for="adress">Adress:</label>
+            <input type="text" id="adress" placeholder="Adress">
+
+            <label for="postnr">Postnummer</label>
+            <input type="text" id="postnr" placeholder="Postnummer">
+
+            <label for="ort">Ort:</label>
+            <input type="text" id="ort" placeholder="Ort">
+
+            <div>
+                <input type="checkbox" id="confirm">
+                <label for="confirm">Jag accepterar köpvillkoren</label>
+            </div>
+        </fieldset>
+    </form>
+    
+<button class="mainBtn" id="buyBtn" onclick="checkoutBasket()">Slutför köp</button>
+</div>
+<div class="margin"></div>
+
+    </main>
+
+    <footer>
+        <div class="footerGrid">
+            <div class="footerSec1">
+                <h2>Kontakta oss</h2>
+                <p>Telefon: 000 - 00 00 00</p>
+                <p>Telefontid mån - fre kl 09.00-14.00</p><br>
+                <p>Orderfrågor: order@minimi.se</p>
+                <p>Glöm ej att ange ordernummer.</p><br>
+                <p>Övriga frågor: info@minimi.se</p>
+            </div>
+
+            <div class="footerSec2">
+                <h2>Länkar</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="produkter.html">Produkter</a></li>
+                        <li><a href="omoss.html">Om oss</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footerSec3">
+                <h2>Ta del av det senaste!</h2>
+                <p>Anmäl dig till vårt nyhetsbrev för att ta del av våra kampanjer, förhandsinformation om rea och
+                    senaste
+                    nytt!</p>
+
+                <button class="footerBtn">Prenumerera på vårt nyhetsbrev</button>
+            </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/webshop.js"></script>
+</body>
+
+</html>

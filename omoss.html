@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMi - Ekologiska och giftfria leksaker</title>
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Twinkle+Star&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="offer">
+            <p>Ny kund? Få 20% rabatt på din första order! Ange: NYKUND i kassan.</p>
+        </div>
+        <div class="navbar">
+            <div class="maxWidth">
+                <a href="index.html"><img src="bilder/logo.png" alt="MiniMi"></a>
+                <nav>
+                    <!--Länkar i huvudnavigering-->
+                    <ul class="mainLinks">
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="produkter.html">Produkter</a></li>
+                        <li><a class="navActive" href="omoss.html">Om oss</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                    <!--Favoriter och varukorg i huvudnavigering-->
+                    <ul class="favBasket">
+                        <li><a class="favHeart" href="favoriter.html"><img src="icons/heart.svg" alt="Favoriter"></a>
+                        </li>
+                        <li><a class="basket" href="varukorg.html"><img src="icons/bag.svg" alt="Varukorg"></a><span id="small-basket"></span></li>
+                    </ul>
+
+                    <!--Hamburgermeny-->
+                    <div class="hamburgerMenu">
+                        <div id="menu">
+                            <div id="menu-bar" onclick="menuOnClick()">
+                                <div id="bar1" class="bar"></div>
+                                <div id="bar2" class="bar"></div>
+                                <div id="bar3" class="bar"></div>
+                            </div>
+                            <nav class="hamburger" id="nav">
+                                <ul class="mainLinksHB">
+                                    <li><a href="index.html">Hem</a></li>
+                                    <li><a href="produkter.html">Produkter</a></li>
+                                    <li><a class="navActive" href="omoss.html">Om oss</a></li>
+                                    <li><a href="kontakt.html">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="menu-bg" id="menu-bg"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Sidrubrik-->
+    <div class="pageHeader">
+        <h1>Om oss</h1>
+    </div>
+
+    <!--Breadcrumbs-->
+    <div class="breadcrumbsContainer">
+        <p class="p_breadcrumbs"><a href="index.html">Hem</a> / Om oss</p>
+    </div>
+
+
+    <main>
+        <div class="maxWidthAbout">
+            <div class="aboutUs">
+
+                <div class="col1">
+                    <div class="margin"></div>
+                    <strong>Vi på MiniMi brinner för att skapa en lekmiljö där varje barn kan utforska världen på ett
+                        säkert och spännande sätt. Vi tror på kraften av lek och fantasi och strävar efter att erbjuda
+                        produkter som inte bara inspirerar kreativitet utan också garanterar barns hälsa och
+                        välbefinnande.</strong><br>
+                    <h2>Vår berättelse:</h2>
+                    <p>Allt började med en enkel vision - att skapa en plats där föräldrar och vårdnadshavare kan känna
+                        sig trygga när de väljer leksaker till sina älskade barn. Vi insåg att många traditionella
+                        leksaker innehöll potentiellt skadliga ämnen, och vi bestämde oss för att göra en förändring.
+                        MiniMi föddes ur önskan att erbjuda ett brett utbud av giftfria leksaker som inte bara skulle
+                        vara säkra utan också främja hållbarhet och medveten konsumtion.</p>
+
+                </div>
+
+                <div class="col2">
+                    <h2>Vår filosofi:</h2>
+                    <p>Vi tror att varje barn förtjänar det bästa, och därför väljer vi noggrant varje produkt i vårt
+                        sortiment. Våra leksaker är fria från farliga kemikalier och tillverkas med hållbara material
+                        för att säkerställa att de inte bara är säkra för barnen utan också för vår planet. Vi strävar
+                        efter att erbjuda leksaker som stimulerar fantasi, kreativitet och lärande på ett ansvarsfullt
+                        sätt.
+                    </p><br>
+                    <h2>Vår gemenskap:</h2>
+                    <p>På MiniMi ser vi oss själva som en gemenskap av föräldrar, vårdnadshavare och lekentusiaster som
+                        delar en gemensam övertygelse om att barnens lek är avgörande för deras utveckling. Vi välkomnar
+                        dig att bli en del av vår gemenskap och utforska vårt noggrant utvalda sortiment av leksaker som
+                        sätter barnens säkerhet och glädje i första rummet.
+                        Tack för att du är här och för att du väljer MiniMi - där varje lek är en säker
+                        och glädjefylld upplevelse!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="maxWidthPurple">
+
+            <div class="purpleText">
+
+                <div class="col1">
+                    <img src="bilder/portrait.png" alt="Emma Lorensson - webbutvecklare">
+                </div>
+
+                <div class="col2">
+                    <h2>Om mig:</h2>
+                    <p>
+                        Jag som skapat denna webbplats heter Emma och studerar Webbutveckling via Mittuniversitetet i
+                        Sundsvall. Webbplatsen är skapad som examinerande uppgift i kursen DT068G - Grafisk Teknik för
+                        Webb. </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerGrid">
+            <div class="footerSec1">
+                <h2>Kontakta oss</h2>
+                <p>Telefon: 000 - 00 00 00</p>
+                <p>Telefontid mån - fre kl 09.00-14.00</p><br>
+                <p>Orderfrågor: order@minimi.se</p>
+                <p>Glöm ej att ange ordernummer.</p><br>
+                <p>Övriga frågor: info@minimi.se</p>
+            </div>
+
+            <div class="footerSec2">
+                <h2>Länkar</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="produkter.html">Produkter</a></li>
+                        <li><a href="omoss.html">Om oss</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footerSec3">
+                <h2>Ta del av det senaste!</h2>
+                <p>Anmäl dig till vårt nyhetsbrev för att ta del av våra kampanjer, förhandsinformation om rea och
+                    senaste
+                    nytt!</p>
+
+                <button class="footerBtn">Prenumerera på vårt nyhetsbrev</button>
+            </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/webshop.js"></script>
+</body>
+
+</html>
