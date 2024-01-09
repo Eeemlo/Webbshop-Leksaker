@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMi - Ekologiska och giftfria leksaker</title>
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="icon" type="image/x-icon" href="bilder/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Twinkle+Star&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="offer">
+            <p>Ny kund? Få 20% rabatt på din första order! Ange: NYKUND i kassan.</p>
+        </div>
+        <div class="navbar">
+            <div class="maxWidth">
+                <a href="index.html"><img src="bilder/logo.png" alt="MiniMi"></a>
+                <nav>
+                    <!--Länkar i huvudnavigering-->
+                    <ul class="mainLinks">
+                        <li><a class="navActive" href="index.html">Hem</a></li>
+                        <li><a href="produkter.html">Produkter</a></li>
+                        <li><a href="omoss.html">Om oss</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                    <!--Favoriter och varukorg i huvudnavigering-->
+                    <ul class="favBasket">
+                        <li><a class="favHeart" href="favoriter.html"><img src="icons/heart.svg" alt="Favoriter"></a></li>
+                        <li><a class="basket" href="varukorg.html"><img src="icons/bag.svg" alt="Varukorg"></a><span id="small-basket"></span></li>
+                    </ul>
+
+                    <!--Hamburgermeny-->
+                    <div class="hamburgerMenu">
+                        <div id="menu">
+                            <div id="menu-bar" onclick="menuOnClick()">
+                                <div id="bar1" class="bar"></div>
+                                <div id="bar2" class="bar"></div>
+                                <div id="bar3" class="bar"></div>
+                            </div>
+                            <nav class="hamburger" id="nav">
+                                <ul class="mainLinksHB">
+                                    <li><a class="navActive" href="index.html">Hem</a></li>
+                                    <li><a href="produkter.html">Produkter</a></li>
+                                    <li><a href="omoss.html">Om oss</a></li>
+                                    <li><a href="kontakt.html">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="menu-bg" id="menu-bg"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+
+
+        <div class="heroImg">
+            <p class="herotext">Ekologiska och giftfria leksaker som håller i generationer</p>
+        </div>
+
+        <h2>Populära produkter</h2>
+
+
+        <div class="popularProducts">
+
+
+            <!--Produkt 1-->
+            <div class="imageBox1" onclick="window.location.href='pr5.html';">
+                <div class="imageOnLoad">
+                    <picture class="prImage">
+                        <source type="image/webp" srcset="bilder/pr5_dino/dino_visning.webp">
+                        <img src="bilder/pr5_dino/dino_visning.jpg" alt="Färgglad regnbåge i trä">
+                    </picture>
+                    <div class="hoverImg">
+                        <div class="imgText">Till produkten</div>
+                    </div>
+                </div>
+                <p>Regnbåge i trä</p>
+                <strong>699 SEK</strong>
+            </div>
+
+            <!--Produkt 2-->
+            <div class="imageBox2" onclick="window.location.href='pr2.html';">
+                <div class="imageOnLoad">
+                    <picture class="prImage">
+                        <source type="image/webp" srcset="bilder/pr2_kulram/kulram1_visning.webp">
+                        <img src="bilder/pr2_kulram/kulram1_visning.jpg" alt="Färgglad kulram i trä">
+                    </picture>
+                    <div class="hoverImg">
+                        <div class="imgText">Till produkten</div>
+                    </div>
+                </div>
+                <p>Kulram</p>
+                <strong>299 SEK</strong>
+            </div>
+
+            <!--Produkt 3-->
+            <div class="imageBox3" onclick="window.location.href='pr3.html';">
+                <div class="imageOnLoad">
+                    <picture class="prImage">
+                        <source type="image/webp" srcset="bilder/pr3_pokemon/pikachu_visning.webp">
+                        <img src="bilder/pr3_pokemon/pikachu_visning.jpg" alt="Squishmallow pokemon">
+                    </picture>
+                    <div class="hoverImg">
+                        <div class="imgText">Till produkten</div>
+                    </div>
+                </div>
+                <p>Gosedjur pokemon</p>
+                <strong>799 SEK</strong>
+            </div>
+
+        </div>
+
+        <!--Knapp: Visa alla produkter-->
+        <div class="buttons">
+            <button class="mainBtn" id="showallBtn" onclick="window.location.href='produkter.html';">Visa alla
+                produkter</button>
+        </div>
+
+        <div class="maxWidthPurple">
+            <h3>Giftfri lek för varje barn: En hållbar investering!</h3>
+
+            <div class="purpleText">
+
+                <div class="col1">
+                    <p>Varje barn förtjänar att utforska världen genom lek utan oro för farliga kemikalier eller ämnen
+                        som
+                        kan
+                        skada deras hälsa. Giftfria leksaker inte bara säkerställer en tryggare lekmiljö, utan främjar
+                        också
+                        hållbarhet och en mer medveten konsumtion. Bakom varje leksak finns en värld av kreativitet och
+                        fantasi som barnen tar del av.</p>
+                </div>
+
+                <div class="col2">
+                    <p>
+                        Genom att
+                        välja
+                        giftfria alternativ säkerställer vi att dessa små äventyr inte kompromissar barnens hälsa. Många
+                        traditionella leksaker har i det förflutna innehållit potentiellt skadliga ämnen, men det finns
+                        nu
+                        ett
+                        växande utbud av säkra och miljövänliga alternativ tillgängliga på marknaden. Giftfri lek är en
+                        investering i våra barns glädje, utveckling och framtida välbefinnande.</p>
+                </div>
+            </div>
+            <div class="videoContainer">
+                <iframe width="900" height="506" src="https://www.youtube.com/embed/Md1jKI0djCs?si=0s0ffFg-gDxb0-_n"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerGrid">
+            <div class="footerSec1">
+                <h2>Kontakta oss</h2>
+                <p>Telefon: 000 - 00 00 00</p>
+                <p>Telefontid mån - fre kl 09.00-14.00</p><br>
+                <p>Orderfrågor: order@minimi.se</p>
+                <p>Glöm ej att ange ordernummer.</p><br>
+                <p>Övriga frågor: info@minimi.se</p>
+            </div>
+
+            <div class="footerSec2">
+                <h2>Länkar</h2>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Hem</a></li>
+                        <li><a href="produkter.html">Produkter</a></li>
+                        <li><a href="omoss.html">Om oss</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footerSec3">
+                <h2>Ta del av det senaste!</h2>
+                <p>Anmäl dig till vårt nyhetsbrev för att ta del av våra kampanjer, förhandsinformation om rea och
+                    senaste
+                    nytt!</p>
+
+                <button class="footerBtn">Prenumerera på vårt nyhetsbrev</button>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/webshop.js"></script>
+</body>
+
+</html>
